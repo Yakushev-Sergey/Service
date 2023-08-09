@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/nouislider.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+  <script src="./js/nouislider.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+
+</head>
+
+<body class=" active__menu">
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header-logo">
+          <img class="logo__img" src="images/Logo.svg" alt="логотип ">
+        </div>
+
+        <!-- модальное окно вызова  -->
+
+
+        <div class="btn-forms btn-forms__hidden" data-modal>
+          <div class="svg__btn btn-forms__close" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+              <path
+                d="M15.9695 4.72269L3.65404 16.8761C3.34503 17.181 2.82674 17.1645 2.49714 16.8393C2.16753 16.514 2.15081 16.0025 2.45982 15.6976L14.7753 3.54417C15.0843 3.23923 15.6026 3.25573 15.9322 3.581C16.2618 3.90627 16.2785 4.41774 15.9695 4.72269Z"
+                fill="white" />
+              <path
+                d="M14.7752 17.0093L2.45981 4.85594C2.1508 4.551 2.16752 4.03953 2.49713 3.71426C2.82673 3.38899 3.34502 3.37249 3.65403 3.67743L15.9695 15.8308C16.2785 16.1358 16.2618 16.6472 15.9322 16.9725C15.6025 17.2978 15.0843 17.3143 14.7752 17.0093Z"
+                fill="white" />
+            </svg>
+          </div>
+          <div class="btn-forms__title">
+            МОБИЛЬНЫЙ ШИНОМОНТАЖ <br> 24 ЧАСА В СУТКИ
+          </div>
+
+          <form id="form-action" action="" method="POST" name="form">
+            <div class="btn-forms__tel-form">
+              <label class="legal__label btn-forms__label">Ваш телефон</label>
+              <input class="legal__input" data-input-tel type="tel" id="phone"
+                placeholder="+7 ( _ _ _ )   _ _ _    _ _    _ _" maxlength="18">
+            </div>
+            <div class="btn-forms__button">
+              <button type="submit" class="legal-btn__arrange">Оформить заявку</button>
+            </div>
+            <div id="loader" class="onhidden">Отправляем...</div>
+          </form>
+        </div>
+
+        <!-- модальное окно вызова  -->
+
+        <button class="menu__mobile">
+          <span class="mobile__span-first span-x"></span>
+          <span class="mobile__span-second span-x"></span>
+          <span class="mobile__span-third span-x"></span>
+        </button>
+
+        <nav class="menu  active__menu ">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#!">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#addwork">Работы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#pricenav">Цены</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__tel active__menu ">
+          <a class="header__tel-link " href="tel:88005551326">8 (800) 555-13-26</a>
+        </div>
+        <div class="header__btn  active__menu challenge__btn">
+          <button class="header__menu-btn" data-modal-button="modal-1">Заказать звонок </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main" style="background-image: url(images/header-fone.png);">
+    <section class="top">
+      <div class="container">
+        <div class="top__wrapper">
+
+          <div class="top__content">
+            <div class="top__title">
+              <h1>Мобильный <br> ШИНОМОНТАЖ №1</h1>
+              <p>В интернет-магазине шин Шины Мигом вы можете купить шины известных брендов. Подбор осуществляется как
+                по типоразмеру, так и по марке авто</p>
+            </div>
+            <div class="top__btn">
+              <button class="btn__challenge" data-modal-button="modal-2">Вызвать шиномонтаж</button>
+            </div>
+          </div>
+
+          <div class="top__card">
+
+            <div class="top__card-rem">
+              <div class="card-rem__title">
+                <h3>МОБИЛЬНЫЙ РЕМОНТ <br> И ЗАМЕНА КОЛЕС</h3>
+                <p>Услуги выездного шиномонтажа в СПб и ЛО для транспортных средств</p>
+              </div>
+            </div>
+
+            <div class="top__card-auto">
+              <div class="card-auto__cost">
+                <span> от 199₽ </span>
+              </div>
+              <div class="card-auto__title">
+                Легковые авто
+              </div>
+              <div class="card-auto__img">
+                <img class="card-auto__sedan" src="images/sedan-1.png" alt="">
+              </div>
+            </div>
+
+            <div class="top__card-auto auto-color__grey">
+              <div class="card-auto__cost auto__cost-grey">
+                <span> от 299₽ </span>
+              </div>
+              <div class="card-auto__title auto__title-color">
+                Кроссоверы, джипы, минивены
+              </div>
+              <div class="card-auto__img">
+                <img class="card-auto__sedan" src="images/jeep-2.png" alt="">
+              </div>
+            </div>
+
+            <div class="top__card-auto auto-color__blue">
+              <div class="card-auto__cost auto__cost-blue">
+                <span> от 399₽ </span>
+              </div>
+              <div class="card-auto__title">
+                Коммерческий транспорт
+              </div>
+              <div class="card-auto__img">
+                <img class="card-auto__sedan" src="images/truck-3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- второе окно  -->
+
+
+  <section class="legal">
+    <div class="legal-content__title">
+      <div class="legal-content__text">
+        <h2>Для юридических лиц</h2>
+        <p> <span>Акция!</span> Первое авто бесплатно! </p>
+      </div>
+    </div>
+
+    <div class="legal__wrapper">
+      <div class="legal__images">
+        <img class="legal__img" src="images/parcing.jpg" alt="parking">
+      </div>
+
+      <div class="legal-content">
+
+        <div class="legal-content__wrapper">
+          <ul class="legal__list">
+            <li class="legal__item">Работа с НДС</li>
+            <li class="legal__item">Комплексное обслуживание автопарков</li>
+            <li class="legal__item">Заключение договора</li>
+            <li class="legal__item">Оплата после выполнения работ</li>
+          </ul>
+        </div>
+
+        <div class="legal-form__wrapper">
+          <form class="legal__form" action="#!">
+            <label class="legal__label">Ваш телефон</label>
+            <input class="legal__input" data-input-tel type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required placeholder="+7 ( _ _ _ )   _ _ _    _ _    _ _" maxlength="18">
+          </form>
+        </div>
+
+        <div class="legal-btn">
+          <button class="legal-btn__arrange">Оформить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- третье окно  -->
+
+
+  <section class="advantages" id="advantages" style="background-image: url(images/fone-3.png);">
+    <div class="container">
+      <div class="advantages__title">
+        <h2>реимущества мобильного шиномонтажа</h2>
+      </div>
+      <div class="advantages__content-wrapper">
+        <div class="advantages__content advantages__content-left">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item-left">Онлайн запись</li>
+            <li class="advantages__item advantages__item-left">Бесконтактное <br> обслуживание</li>
+            <li class="advantages__item advantages__item-left">Сертифицированное <br> оборудование и мастера</li>
+            <li class="advantages__item advantages__item-left">Гарантия на все виды <br> работ 365 дней</li>
+          </ul>
+        </div>
+
+        <div class="advantages__images">
+          <hr class="advantages__line-first">
+          <hr class="advantages__line-second">
+          <img class="advantages__img" src="images/wheel.png" alt="">
+          <hr class="advantages__line-third">
+          <hr class="advantages__line-fourtf">
+        </div>
+
+        <div class="advantages__content advantages__content-right">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item-right">Все типы оплат</li>
+            <li class="advantages__item advantages__item-right">Без очередей</li>
+            <li class="advantages__item advantages__item-right">В удобном месте</li>
+            <li class="advantages__item advantages__item-right">В удобном месте</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- четвертое окно   -->
+
+
+  <section class="mobile-service">
+    <div class="container">
+      <div class="mobile-service__title">
+        МОБИЛЬНЫЙ ШИНОМОНТАЖ <br> 24 ЧАСА В СУТКИ
+      </div>
+      <div class="mobile-service__wrapper">
+        <form class="legal__form mobile-service__form" action="#!">
+          <label class="legal__label">Ваш телефон</label>
+          <input class="legal__input" data-input-tel type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+            placeholder="+7 ( _ _ _ )   _ _ _    _ _    _ _" maxlength="18">
+        </form>
+
+        <div class="legal-btn mobile-service__btn">
+          <button class="legal-btn__arrange mobile__btn">Оформить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Пятое окно  -->
+
+  <section class="additional">
+    <div class="container">
+      <div class="additional__title">
+        Дополнительные работы
+      </div>
+      <div class="additional__wrapper" id="addwork">
+        <div class="additional__images">
+          <img class="additional__img" src="images/wheels-2.png" alt="">
+        </div>
+
+        <div class="additional__content">
+          <ul class="additional__list">
+            <li class="additional__item">Сезонное хранение шин</li>
+            <li class="additional__item">Ремонт шин и дисков</li>
+            <li class="additional__item">Снятие секреток</li>
+            <li class="additional__item">Ошиповка</li>
+            <li class="additional__item">Покраска дисков</li>
+            <li class="additional__item">Утилизация шин</li>
+            <li class="additional__item">Заправка кондиционера</li>
+            <li class="additional__item">Запуск авто в зимнее время</li>
+            <li class="additional__item">Trade in шин</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- шестое окно  -->
+
+
+  <section class="map">
+    <div class="map__content">
+      <div class="map-fone__images">
+        <img class="map__fone-img" src="images/fone__map.jpg" alt="">
+        <img class="map__fone-img" src="images/map.jpg" alt="">
+      </div>
+      <div class="map-content__wrapper">
+        <div class="map-images__title">
+          <h3>Карта покрытия <br> мобильного <br> шиномонтажа</h3>
+        </div>
+        <div class="map-images__text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="16" fill="#D07C75" stroke="white" stroke-width="2" />
+          </svg>
+          <p>Зона покрытия</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- седьмое окно  -->
+
+
+  <section class="price">
+    <div class="container">
+      <div class="price__title">
+        ЦЕНЫ НА МОБИЛЬНЫЙ <br> ШИНОМОНТАЖ
+      </div>
+
+      <div class="price__wrapper" id="pricenav">
+
+        <label class="price__label" for="#!">Выберите Ø колёс</label>
+        <div class="slider__input" id="slider">
+
+          <div class="noUi-list" id="form">
+
+            <label class="range__item" data-value="1" data-color="1" data-button="tab-1">R 13-15</label>
+            <label class="range__item" data-value="2" data-color="2" data-button="tab-2">R 16</label>
+            <label class="range__item" data-value="3" data-color="3" data-button="tab-3">R 17</label>
+            <label class="range__item" data-value="4" data-color="4" data-button="tab-4">R 18</label>
+            <label class="range__item" data-value="5" data-color="5" data-button="tab-5">R 19</label>
+            <label class="range__item" data-value="6" data-color="6" data-button="tab-6">R 20</label>
+            <label class="range__item" data-value="7" data-color="7" data-button="tab-7">R 21-22</label>
+
+          </div>
+        </div>
+
+        <!-- прайс телефон  -->
+
+        <div class="price__option">
+          <label class="price__label price__label-mobile">Выберите Ø колёс</label>
+          <ul class="price-option__list">
+            <li class="price-option__item">
+              <img class="price-option__img" src="images/arrow-down.svg" alt="#!">
+              <a class="price-option__link" href="#!"> </a>
+              <ul class="option__list">
+                <li class="price-option__item">
+                  <option class="price-mobile__option first" data-tab="tab-1">R 13-15</option>
+                  <option class="price-mobile__option" data-tab="tab-2">R 16</option>
+                  <option class="price-mobile__option" data-tab="tab-3">R 17</option>
+                  <option class="price-mobile__option" data-tab="tab-4">R 18</option>
+                  <option class="price-mobile__option" data-tab="tab-5">R 19</option>
+                  <option class="price-mobile__option" data-tab="tab-6">R 20</option>
+                  <option class="price-mobile__option" data-tab="tab-7">R 21-22</option>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- прайс телефон  -->
+
+      </div>
+
+      <div class="price__content" data-tab-content id="tab-1">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">120 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">125 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">105 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">30 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">50 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">200 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">100 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">350 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">300-600 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">500-700 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">600-1400 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">400 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">500/800 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">500/800 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price__content price__content--hidden" data-tab-content id="tab-2">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">150 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">145 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">120 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">50 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">60 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">250 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">120 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">370 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">400-700 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">600-800 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">700-1500 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">450 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">550/850 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">550/850 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price__content price__content--hidden" data-tab-content id="tab-3">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">170 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">165 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">130 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">60 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">70 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">270 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">140 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">390 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">450-750 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">650-850 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">750-1550 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">500 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">570/870 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">570/870 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price__content price__content--hidden" data-tab-content id="tab-4">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">180 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">175 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">145 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">70 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">80 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">290 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">160 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">410 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">470-770 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">670-870 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">770-1600 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">530 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">590/890 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">590/890 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price__content price__content--hidden" data-tab-content id="tab-5">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">190 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">185 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">155 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">80 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">90 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">300 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">180 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">450 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">490-790 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">690-890 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">790-1650 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">550 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">650/950 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">650/950 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price__content price__content--hidden" data-tab-content id="tab-6">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">200 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">190 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">190 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">90 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">100 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">350 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">200 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">490 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">550-850 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">750-950 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">850-1700 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">600 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">690/990 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">690/990 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price__content price__content--hidden" data-tab-content id="tab-7">
+        <ul class="price__list">
+          <li class="price__item">Снятие и установка колеса
+            <span class="price__items">250 ₽</span>
+          </li>
+          <li class="price__item">Демонтаж/монтаж шины
+            <span class="price__items">200 ₽</span>
+          </li>
+          <li class="price__item">Балансировка колеса с учетом грузиков
+            <span class="price__items">250 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана резинового
+            <span class="price__items">100 ₽</span>
+          </li>
+          <li class="price__item">Установка клапана металлического
+            <span class="price__items">100 ₽</span>
+          </li>
+          <li class="price__item">Установка одного датчика давления
+            <span class="price__items ">390 ₽</span>
+          </li>
+          <li class="price__item">Очистка и смазка ступицы, шпилек/болтов
+            <span class="price__items">250 ₽</span>
+          </li>
+          <li class="price__item">Ремонт камеры (одно повреждение)
+            <span class="price__items">550 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола жгутом
+            <span class="price__items">590-890 ₽</span>
+          </li>
+          <li class="price__item">Ремонт прокола грибком
+            <span class="price__items">790-990 ₽</span>
+          </li>
+          <li class="price__item">Ремонт бокового пореза шины
+            <span class="price__items">890-1790 ₽</span>
+          </li>
+          <li class="price__item">Утилизация шины
+            <span class="price__items">690 ₽</span>
+          </li>
+          <li class="price__item">Коэф. для внедорожников и низкопрофильной резины
+            <span class="price__items">1,2</span>
+          </li>
+          <li class="price__item">Выезд шиномонтажа (день/ночь)
+            <span class="price__items">750/1000 ₽</span>
+          </li>
+          <li class="price__item">Дополнительно оплачивается выезд за КАД
+            <span class="price__items">790/1100 ₽</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="top__btn price__btn">
+        <button class="btn__challenge" data-modal-button="modal-3">Вызвать шиномонтаж</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- восьмое окно  -->
+
+
+
+  <section class="responses">
+    <div class="container">
+      <div class="responses__title">
+        Отзывы и рекомендации
+      </div>
+
+      <div class="responses__content">
+        <div class="responses__box">
+          <div class="responses__video">
+            <button class="responses-video__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
+                <path
+                  d="M19.5 16.3301C22.8333 14.4056 22.8333 9.59437 19.5 7.66987L7.49999 0.741667C4.16666 -1.18283 0 1.2228 0 5.0718V18.9282C0 22.7772 4.16667 25.1828 7.5 23.2583L19.5 16.3301Z"
+                  fill="#FFD300" />
+              </svg>
+            </button>
+          </div>
+          <div class="responses__text">
+            <p class="responses__name-com">Название компании</p>
+            <p class="responses__name-post">должность</p>
+          </div>
+        </div>
+
+        <div class="responses__box">
+          <div class="responses__video">
+            <button class="responses-video__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
+                <path
+                  d="M19.5 16.3301C22.8333 14.4056 22.8333 9.59437 19.5 7.66987L7.49999 0.741667C4.16666 -1.18283 0 1.2228 0 5.0718V18.9282C0 22.7772 4.16667 25.1828 7.5 23.2583L19.5 16.3301Z"
+                  fill="#FFD300" />
+              </svg>
+            </button>
+          </div>
+          <div class="responses__text">
+            <p class="responses__name-com">Название компании</p>
+            <p class="responses__name-post">должность</p>
+          </div>
+        </div>
+
+        <div class="responses__box">
+          <div class="responses__video">
+            <button class="responses-video__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
+                <path
+                  d="M19.5 16.3301C22.8333 14.4056 22.8333 9.59437 19.5 7.66987L7.49999 0.741667C4.16666 -1.18283 0 1.2228 0 5.0718V18.9282C0 22.7772 4.16667 25.1828 7.5 23.2583L19.5 16.3301Z"
+                  fill="#FFD300" />
+              </svg>
+            </button>
+          </div>
+          <div class="responses__text">
+            <p class="responses__name-com">Название компании</p>
+            <p class="responses__name-post">должность</p>
+          </div>
+        </div>
+
+        <div class="responses__box">
+          <div class="responses__video">
+            <button class="responses-video__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
+                <path
+                  d="M19.5 16.3301C22.8333 14.4056 22.8333 9.59437 19.5 7.66987L7.49999 0.741667C4.16666 -1.18283 0 1.2228 0 5.0718V18.9282C0 22.7772 4.16667 25.1828 7.5 23.2583L19.5 16.3301Z"
+                  fill="#FFD300" />
+              </svg>
+            </button>
+          </div>
+          <div class="responses__text">
+            <p class="responses__name-com">Название компании</p>
+            <p class="responses__name-post">должность</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- девятое окно  -->
+
+
+  <section class="partners">
+    <div class="container">
+      <div class="partners__title">
+        Наши партнеры
+      </div>
+
+      <div class="swiper swiper__partners">
+        <div class="swiper-wrapper  partners__swiper-wrapper">
+
+          <div class="swiper-slide partners__slide">
+            <a href="#!">
+              <img class="partners__slide-img" src="images/uklon-soc.png" alt="uklon">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/ozon-soc.png" alt="ozon">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/esomia-soc.png" alt="esomia">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/artel-soc.png" alt="artel">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/samsung-soc.png" alt="samsung">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/esomia-soc.png" alt="esomia">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/artel-soc.png" alt="artel">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/samsung-soc.png" alt="samsung">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/ozon-soc.png" alt="ozon">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/zalando-soc.png" alt="zalando">
+            </a>
+          </div>
+
+          <div class="swiper-slide  partners__slide">
+            <a href="#!">
+              <img class="partners__slide-img" src="images/esomia-soc.png" alt="esomia">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/artel-soc.png" alt="artel">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/samsung-soc.png" alt="samsung">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/ozon-soc.png" alt="ozon">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/zalando-soc.png" alt="zalando">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/uklon-soc.png" alt="uklon">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/ozon-soc.png" alt="ozon">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/esomia-soc.png" alt="esomia">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/artel-soc.png" alt="artel">
+            </a>
+            <a href="#!">
+              <img class="partners__slide-img" src="images/samsung-soc.png" alt="samsung">
+            </a>
+          </div><a href="#!"></a>
+        </div>
+
+        <div class="swiper-button-prev partners__button-prev"> </div>
+        <div class="swiper-button-next partners__button-next"> </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__menu-wrapper">
+        <div class="header-logo footer__logo">
+          <a href="">
+            <img class="logo__img" src="images/Logo.svg" alt="логотип ">
+          </a>
+
+        </div>
+        <nav class="footer__menu">
+          <ul class="menu__list menu-list__footer">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#!">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#!">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#!">Работы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#!">Цены</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__tel">
+          <a class="header__tel-link footer__tel-link" href="tel:88005551326">8 (800) 555-13-26</a>
+        </div>
+      </div>
+
+      <div class="footer__social-wrapper">
+        <nav class="footer__cocial">
+          <ul class="cocial__list">
+            <li class="cocial__item">
+              <a class="cocial__item-link" href="#!">
+                <img class="item-link__img" src="images/avito-soc.png" alt="">
+              </a>
+            </li>
+            <li class="cocial__item">
+              <a class="cocial__item-link" href="#!">
+                <img class="item-link__img link__img-insta" src="images/soc-insta.svg" alt="">
+              </a>
+            </li>
+            <li class="cocial__item">
+              <a class="cocial__item-link item-link__text" href="#!">
+                Написать директору в WhatsApp
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="footer-copyright__title">
+        2016-2021 © "Шины мигом"
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

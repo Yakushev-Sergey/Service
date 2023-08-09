@@ -1,0 +1,723 @@
+@media (max-width: 1350px) {
+  .legal__item {
+    font-size: 18px;
+  }
+
+  .legal__img {
+    width: 100%;
+    height: 550px;
+  }
+
+  .map__fone-img {
+    width: 50%;
+    height: 560px;
+  }
+
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .top__card {
+    display: grid;
+    grid-template-columns: 439px 230px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .top__content {
+    justify-content: center;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__tel {
+    padding-right: 10px;
+  }
+
+  .legal__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .legal-content {
+    margin-top: 5px;
+  }
+
+  .legal__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .advantages__line-first,
+  .advantages__line-second,
+  .advantages__line-third,
+  .advantages__line-fourtf {
+    display: none;
+  }
+
+  .advantages__content.advantages__content-left {
+    left: 15px;
+    bottom: -8px;
+  }
+
+  .advantages__content.advantages__content-right {
+    right: -31px;
+    bottom: -13px;
+  }
+
+  .advantages__content-wrapper {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .advantages {
+    height: 1500px;
+  }
+
+  .responses__video {}
+
+  .responses__content {
+    grid-template-columns: repeat(2, 440px);
+  }
+
+  .responses__video {
+    width: 430px;
+  }
+
+  .partners__slide {
+    grid-template-columns: repeat(4, 200px);
+  }
+
+  .partners__button-next {
+    right: -884px;
+  }
+
+  .partners__button-prev {
+    left: 840px;
+  }
+
+  .swiper__partners {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+  .map-images__title h3 {
+    font-size: 30px;
+  }
+
+  .map-images__text {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 915px) {
+
+  .mobile-service__wrapper {
+    flex-direction: column;
+  }
+
+  .mobile-service__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .additional__item {
+    font-size: 20px;
+  }
+
+  .additional__wrapper {
+    column-gap: 150px;
+  }
+
+  .responses__video {
+    width: 331px;
+    height: 233px;
+  }
+
+  .responses__content {
+    grid-template-columns: repeat(2, 340px);
+  }
+
+  .partners__button-next {
+    right: -780px;
+  }
+
+  .partners__button-prev {
+    left: 740px;
+  }
+
+  .partners__slide {
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  .footer {
+    height: 400px;
+  }
+
+  .footer__menu-wrapper {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .footer__social-wrapper {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+@media (max-width: 840px) {
+  .partners__button-next {
+    right: -690px;
+  }
+
+  .partners__button-prev {
+    left: 640px;
+  }
+
+  .partners__slide-img {
+    width: 160px;
+    height: 139px;
+  }
+
+  .partners__slide {
+    grid-template-columns: repeat(3, 160px);
+  }
+  .noUi-list {
+    column-gap: 29px;
+  }
+}
+
+
+
+
+
+@media (max-width: 780px) {
+  .header__tel {
+    display: none;
+  }
+
+  .header__wrapper {
+    margin-right: 20px;
+  }
+
+  .mobile-service {
+    min-height: 570px;
+  }
+
+  .additional__wrapper {
+    column-gap: 70px;
+  }
+
+  .map-fone__images {
+    flex-direction: column;
+  }
+
+  .map__fone-img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .map-content__wrapper {
+    position: absolute;
+    top: 15%;
+    right: 30%;
+  }
+
+  .price__item {
+    width: 100%;
+  }
+
+  .price__label {
+    padding: 0px;
+    margin: 20px auto;
+  }
+
+  .price__range {
+    left: 150px;
+  }
+
+  .price__item {
+    background-color: #17181c05;
+  }
+
+  .partners__button-prev {
+    left: 530px;
+  }
+
+  .partners__button-next {
+    right: -580px;
+  }
+
+  .footer {
+    height: 520px;
+  }
+  .price__wrapper {
+    flex-direction: column-reverse;
+  }
+  .noUi-list {
+    column-gap: 39px;
+}
+
+}
+
+
+
+
+
+
+
+@media (max-width: 680px) {
+  .header__wrapper {
+    position: fixed;
+    z-index: 10;
+  }
+
+
+  .menu.btn-forms__hidden {
+    display: none;
+  }
+
+  /* меню бургер  */
+  .menu__mobile {
+    display: flex;
+    margin-right: 10px;
+    z-index: 10;
+    border-radius: 5px;
+  }
+
+  /* меню крестик  */
+  .mobile__span-first.active--menu {
+    transform: rotate(-45deg);
+    top: 23px;
+    transition: all .45s ease;
+  }
+
+  .mobile__span-second.active--menu {
+    transform: scale(0);
+    transition: all .45s ease;
+  }
+
+  .mobile__span-third.active--menu {
+    transform: rotate(45deg);
+    bottom: 22px;
+    transition: all .45s ease;
+  }
+
+
+  .menu {
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: all .95s ease;
+  }
+
+  .menu.active--menu {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    background-color: #17181C;
+    width: 100vw;
+    height: 120vh;
+    top: -15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .65s ease;
+    transform: translateY(0%);
+  }
+
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    background-color: #17181C;
+    align-items: center;
+    margin-top: 175px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    transition: all .65s ease;
+  }
+
+  .header__tel {
+    display: block;
+    position: absolute;
+    transform: translateX(-400%);
+    transition: all .95s ease;
+    top: 470px;
+  }
+
+  .header__tel.active--menu {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 470px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transform: translateX(0%);
+    transition: all .95s ease;
+  }
+
+  .header__btn {
+    display: block;
+    position: absolute;
+    transform: translateX(400%);
+    transition: all .95s ease;
+    top: 515px;
+  }
+
+  .header__btn.active--menu {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 515px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transform: translateX(0%);
+    transition: all .95s ease;
+  }
+
+  body.active--menu {
+    overflow: hidden;
+  }
+
+
+  /* меню бургер  ^^^ */
+
+  .menu__item-link {
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+  }
+
+  .header-logo.footer__logo {
+    position: relative;
+    z-index: 10;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header-logo {
+    position: relative;
+    z-index: 10;
+    margin-left: 20px;
+  }
+
+  .top__title h1 {
+    font-size: 33px;
+    line-height: normal;
+    padding-bottom: 10px;
+  }
+
+  .top__title p {
+    font-size: 16px;
+    width: 320px;
+  }
+
+  .top__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top__card-rem {
+    width: 330px;
+    height: 265px;
+    position: relative;
+  }
+
+  .card-rem__title h3 {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .card-rem__title p {
+    padding-left: 20px;
+  }
+
+  .top__card-rem::after {
+    content: "Стоимость";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #5F6166;
+    top: 17px;
+    left: 14px;
+    width: 108px;
+    height: 33px;
+    background-color: #D3D4D6;
+    border-radius: 5px;
+    z-index: 5;
+  }
+
+  .top__card-auto {
+    width: 331px;
+    height: 170px;
+  }
+
+  .card-auto__sedan {
+    position: relative;
+    left: 185px;
+    top: 15px;
+  }
+
+  .card-auto__cost span {
+    margin-top: 51px;
+  }
+
+  .legal-content__text h2 {
+    font-size: 30px;
+  }
+
+  .legal-content__text p {
+    font-size: 18px;
+  }
+
+  .advantages__img {
+    width: 245px;
+    height: 312px;
+  }
+
+  .advantages__content.advantages__content-right {
+    margin-top: 50px;
+  }
+
+  .advantages__content.advantages__content-left {
+    margin-bottom: 50px;
+  }
+
+  .additional__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    column-gap: normal;
+    row-gap: 25px;
+  }
+
+  .additional__title {
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .price__form {
+    display: none;
+  }
+
+  /* прайс телефон  */
+
+  .price__option {
+    visibility: visible;
+    opacity: 1;
+  }
+  .price__label.price__label-mobile {
+    padding-right: 23px;
+    display: block;
+  }
+
+  .partners__title {
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .responses__content {
+    grid-template-columns: repeat(1, 340px);
+  }
+
+  .responses__title {
+    font-size: 30px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .partners__button-prev {
+    left: 440px;
+  }
+
+  .partners__button-next {
+    right: -490px;
+  }
+
+  .menu__list.menu-list__footer {
+    display: flex;
+    margin-top: 0;
+    line-height: normal;
+    row-gap: 10px;
+  }
+
+  .footer__menu-wrapper {
+    margin-top: 50px;
+  }
+
+  .footer {
+    height: 782px;
+  }
+
+  .footer__tel {
+    display: flex;
+  }
+
+  .cocial__list {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 40px;
+  }
+  .footer-copyright__title {
+    margin-top: 30px;
+  }
+  .slider__input {
+    display: none;
+  }
+  .price__label {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+  .additional__img {
+    width: 300px;
+    height: 294px;
+  }
+
+  .additional__images {
+    margin-bottom: 20px;
+  }
+
+  .additional__title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .additional__wrapper {
+    margin-top: 20px;
+  }
+
+  .legal__item {
+    font-size: 15px;
+  }
+
+  .map__fone-img {
+    height: 400px;
+  }
+
+  .map-content__wrapper {
+    top: 12%;
+    right: 15%;
+  }
+
+  .price__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .price__list {
+    font-size: 15px;
+  }
+
+  .price__items {
+    margin-left: 20px;
+    text-wrap: nowrap;
+  }
+
+  .price__list {
+    font-size: 12px;
+  }
+
+  .price-form__mobile {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+  .price__btn {
+    margin-top: 55px;
+  }
+
+  .btn-forms {
+    width: 355px;
+    height: 510px;
+  }
+
+  .partners__slide {
+    grid-template-columns: repeat(2, 160px);
+  }
+
+  .partners__button-next {
+    right: -290px;
+  }
+
+  .partners__button-prev {
+    left: 240px;
+  }
+  .legal__input {
+    width: 280px;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 450px) {
+.price__label.price__label-mobile {
+  padding-right: 10px;
+  font-size: 14px;
+}
+.btn-forms {
+  width: 320px;
+  height: 440px;
+}
+.svg__btn {
+  margin: 60px 63px 0 0;
+}
+
+}
+
+
+@media (max-width: 375px) {
+  .price__label.price__label-mobile {
+    padding-right: 5px;
+  }
+}
+
+
+
