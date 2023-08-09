@@ -354,7 +354,7 @@ img {
 
 .btn__challenge::before {
   content: "";
-  background-image: url('images/wheel-btn.png');
+  background-image: url('../images/wheel-btn.png');
   position: absolute;
   width: 33px;
   height: 33px;
