@@ -1388,7 +1388,7 @@ overflow: auto;
 }
 
 .footer__tel-link::after {
-  content: url('/images/call.svg');
+  content: url('../images/call.svg');
   position: absolute;
   display: block;
   left: -30px;
