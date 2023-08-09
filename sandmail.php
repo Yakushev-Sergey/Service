@@ -1,7 +1,7 @@
 
 <?php 
 
-if ($_POST['form'] == 1){
+if ($_POST['.form'] == 1){
   &form = "номер телефона"
 }
 

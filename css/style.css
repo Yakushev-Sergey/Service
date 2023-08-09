@@ -377,7 +377,7 @@ img {
   position: relative;
   width: 412px;
   height: 288px;
-  background-image: url('images/rem-top.jpg');
+  background-image: url('../images/rem-top.jpg');
   border-radius: 10px;
   z-index: 1;
   display: flex;
