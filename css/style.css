@@ -1016,6 +1016,7 @@ position: relative;
   transition: all .45s ease;
   transform-origin: center;
   transform: rotateX(-90deg);
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
 }
@@ -1025,6 +1026,7 @@ position: relative;
   top: 47px;
   opacity: 1;
   visibility: visible;
+  z-index: 10;
 }
 
 .price-option__item {
