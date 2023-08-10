@@ -1013,33 +1013,33 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  max-height: 200px;
+  padding-top: 400px;
+  overflow: hidden;
+  overflow: auto;
   transition: all .45s ease;
   transform-origin: center;
   transform: rotateX(-90deg);
-  z-index: 10;
   opacity: 0;
   visibility: hidden;
+
 }
+
 
 .option__list.option--active {
   transform: rotateX(0deg);
   top: 47px;
   opacity: 1;
   visibility: visible;
-  z-index: 10;
-}
 
-.price-option__item {
-row-gap: 20px;
-display: flex;
-flex-direction: column;
-max-height: 200px;
-overflow: hidden;
-overflow: auto;
 }
 
 
-.price-mobile__option {
+
+
+.price-mobile {
   font-size: 16px;
   color: #000;
   border-bottom: 1px solid #fff;
@@ -1049,6 +1049,7 @@ overflow: auto;
   justify-content: center;
   padding: 35px;
 }
+
 
 
 

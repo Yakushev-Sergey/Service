@@ -138,7 +138,7 @@ selectOpt.addEventListener('click', function(){
 
 // отображение выбранного значения 
 
-const listItems = document.querySelectorAll('.price-mobile__option');
+const listItems = document.querySelectorAll('.price-mobile');
 const textLink = document.querySelector('.price-option__link');
 const textLinkFirst = document.querySelector('.first');
 
@@ -148,13 +148,12 @@ listItems.forEach((item) => {
   // постоянное отображение 
 
   if (textLinkFirst) {
-    textLink.innerText = textLinkFirst.value
+    textLink.innerText = textLinkFirst.innerHTML  
   }
-
 
   // подставляем значение 
   item.addEventListener('click', function() {
-    textLink.innerText = this.value;
+    textLink.innerText = this.innerHTML;
   })
 
 })
@@ -223,7 +222,6 @@ buttonClose.addEventListener('click', function () {
 
 
 // маска для телефона самая самая самая правильная маска 
-
 
 
 document.addEventListener('DOMContentLoaded', function(){
