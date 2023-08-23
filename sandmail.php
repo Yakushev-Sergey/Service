@@ -1,28 +1,37 @@
 
 <?php 
+// запуск сессии
+session_start();
 
-if ($_POST['tel'] == 1){
-  &tel = "номер телефона"
+// Переодресация
+function redirect() {
+  header('locaTION: index.html');
+  exit;
 }
 
-$to = "yandex.s5230@yandex.ru";
-$from = trim($_POST['tel']);
+// получаем то что вводит пользователь 
+$phone = $_POST['phone'];
 
-&message = htmlspecialchars($_POST['massage']);
-&message = urldecode($massage);
-&message = trim($massage);
+// запрещаем вводить теги и убираем пробелы
+$phone = htmlspecialchars($phone); //преоброзование символов 
+$phone = urldecode($phone); //декодирование
+$phone = trim($phone); //удаление пробелов
 
-if(mail($to, $message)) {
-  echo "письмо отправленно "
+
+
+$_SESSION['phone'] = $phone;
+
+// проверка 
+if(strlen($phone) <= 10 ) {
+  $error_phone = "Короткий номер2";
+}
+
+if ( mail("sergey.s5230@yandex.ru", "Номер телефона : ".$phone, "form: sergey.s5230@yandex.ru") ){
+  echo ('Письмо отправлено!');
+  redirect();
 } else {
-  " письмо не отправленно "
-}
-
-
-
-
-
-
+  echo('есть ошибки');
+};
 
 
 
